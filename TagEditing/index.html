@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery tagEditor Plugin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bodytagsstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/jquery.tag-editor.css">
+</head>
+<body>
+    <div style="max-width:900px;padding:0 10px;margin:40px auto;text-align:center">
+        <h4>Autocomplete</h4>
+        <p>
+            Mam please try to enter the mail ids as shown below!
+            They would try to auto complete :)
+            To change the mail ids go to js folder and edit jquery.tag-mailsource file.
+            and edit the mail ids so as to auto complete<br />
+        </p>
+        <pre>
+$(<b>'#demo2'</b>).tagEditor({
+    autocomplete: {
+        delay: 0, <i>// show suggestions immediately</i>
+        position: { collision: 'flip' }, <i>// automatic menu position up/down</i>
+        source: ['suhaas95@gmail.com', 'anitha_j@karunya.edu', 'aarmelvin@karunya.edu']
+    },
+    forceLowercase: <em>false</em>,
+    placeholder: <b>'Programming languages ...'</b>
+});</pre>
+        <div style="margin:0 0 1.2em"><textarea id="demo2"></textarea></div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+    <script src="../js/jquery.caret.min.js"></script>
+    <script src="../js/jquery.tag-editor.js"></script>
+    <script src="../js/jquery.tag-mailsource.js"></script>
+</body>
+</html>
